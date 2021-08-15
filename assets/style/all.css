@@ -16951,6 +16951,10 @@ body {
   font-size: 2.25rem;
 }
 
+.font-40 {
+  font-size: 2.5rem;
+}
+
 @media (max-width: 375px) {
   .font-22-sm {
     font-size: 1.375rem;
@@ -16982,12 +16986,20 @@ body {
   border-bottom: 1px solid #707070 !important;
 }
 
+.border-bottom-second {
+  border-bottom: 1px solid #E31277 !important;
+}
+
 .border-top {
   border-top: 1px solid #707070 !important;
 }
 
 .border-left {
   border-left: 1px solid #fff !important;
+}
+
+.border-left-gray {
+  border-left: 1px solid #707070 !important;
 }
 
 .font-f-second {
@@ -17064,8 +17076,14 @@ body {
   border-bottom: none;
 }
 
-.modal-body .card {
+.modal-body {
   max-width: 540px;
+}
+
+@media (max-width: 375px) {
+  .modal-body .card {
+    width: 345px;
+  }
 }
 
 .modal-footer {
@@ -17077,11 +17095,16 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  max-width: 540px;
+  max-width: 100%;
   height: 100%;
-  margin: 0;
   -webkit-transform: translate3d(0%, 0, 0);
           transform: translate3d(0%, 0, 0);
+}
+
+@media (max-width: 375px) {
+  .modal.right .modal-dialog {
+    left: 0;
+  }
 }
 
 .modal.right .modal-content {
@@ -17093,6 +17116,12 @@ body {
   padding: 32px 24px 12px 32px;
 }
 
+@media (max-width: 375px) {
+  .modal-header {
+    padding: 20px 12px 12px 15px;
+  }
+}
+
 .modal-header .btn {
   width: 80px;
   padding: 5px;
@@ -17100,6 +17129,12 @@ body {
 
 .modal-body {
   padding: 0 0 0 32px;
+}
+
+@media (max-width: 375px) {
+  .modal-body {
+    padding: 0 0 0 15px;
+  }
 }
 
 .modal .card a {
@@ -17111,6 +17146,22 @@ body {
   padding: 0 32px 22px 32px;
 }
 
+@media (max-width: 375px) {
+  .modal .card-body {
+    padding: 0 16px 16px 16px;
+  }
+}
+
+.modal .card-body .info {
+  width: 160px;
+}
+
+@media (max-width: 375px) {
+  .modal .card-body .info {
+    width: 127px;
+  }
+}
+
 .modal .card-body .pic img {
   width: 120px;
   height: 120px;
@@ -17118,7 +17169,7 @@ body {
 }
 
 .modal-body .status {
-  width: 2px;
+  max-width: 2px;
   height: 540px;
 }
 
@@ -17253,6 +17304,50 @@ body {
 .normal-exibition img {
   width: 100%;
   height: 350px;
+}
+
+.exibition_design_top .row .pic {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true);
+  display: block;
+  height: 256px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.exibition_design_top .pic .row {
+  height: 256px;
+}
+
+.exibition_design_top .pic .row .col-lg-1 {
+  width: 65px;
+}
+
+.exibition_design_top .ticket .btn {
+  width: 240px;
+}
+
+.exibition_design_top .ticket_amount {
+  height: 255px;
+}
+
+.exibition_design_top .ticket_amount .w3 {
+  width: 33.3333%;
+}
+
+.exibition_design_top .ticket_amount .w100 {
+  width: 100%;
+}
+
+.exibition_design_top .line-absolute {
+  position: relative;
+}
+
+.exibition_design_top .line {
+  width: 1px;
+  height: 255px;
+  position: absolute;
+  top: 0px;
+  right: 210px;
 }
 
 /*# sourceMappingURL=all.css.map */

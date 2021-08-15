@@ -1,0 +1,39 @@
+.exibition_design_top{
+    .row .pic{
+        background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true);
+        display: block;
+        height: 256px;
+        background-position: center center;
+        background-size: cover;
+    }
+    .pic .row{
+        height: 256px;
+        .col-lg-1{
+            width: 65px;
+        }
+    }
+    .ticket{
+        .btn{
+            width: 240px;
+        }
+    }
+    .ticket_amount{
+        height: 255px;
+        .w3{
+            width: 33.3333%;
+        }
+        .w100{
+            width: 100%;
+        }
+    }
+    .line-absolute{
+        position: relative;
+    }
+    .line{
+        width: 1px;
+        height: 255px;
+        position: absolute;
+        top: 0px;
+        right: 210px;
+    }
+}

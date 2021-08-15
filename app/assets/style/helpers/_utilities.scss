@@ -22,7 +22,10 @@
     font-size: $font-size-xxl; //32px
 }
 .font-36{
-    font-size: $font-sixe-36; //36px
+    font-size: $font-size-36; //36px
+}
+.font-40{
+    font-size: $font-size-40; //40px
 }
 
 @include phone{
@@ -57,11 +60,17 @@
 .border-bottom{
     border-bottom: 1px solid $gray-70 !important;
 }
+.border-bottom-second{
+    border-bottom: 1px solid $secondary !important;
+}
 .border-top{
     border-top: 1px solid $gray-70 !important;
 }
 .border-left{
     border-left: 1px solid $white !important;
+}
+.border-left-gray{
+    border-left: 1px solid $gray-70 !important;
 }
 
 //字型

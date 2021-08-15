@@ -7,5 +7,7 @@
 @import"./helpers/utilities";
 
 @import "./layout/layout.scss";
-@import './layout/index.scss';
-@import "./layout/design.scss";
+
+@import './pages/index.scss';
+@import "./pages/design.scss";
+@import "./pages/details.scss"

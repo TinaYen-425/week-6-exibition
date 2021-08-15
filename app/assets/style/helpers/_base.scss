@@ -1,0 +1,35 @@
+img  {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+*,*:after,*:before  {
+    box-sizing: border-box;
+}
+
+a{
+    line-height: 1.5;
+    font-family: $font-family-second;
+    text-decoration: none;
+    color: $gray-70;
+    &:hover{
+        color: $primary;
+    }
+}
+ul,li{
+    list-style: none; 
+}
+body{
+    font-family: $font-family-base;//roboto
+    line-height: 1.5;
+}
+
+.btn{
+    font-family: $font-family-second;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.title{
+    font-family: $font-family-second;//noto sants
+    font-weight: bold;
+}

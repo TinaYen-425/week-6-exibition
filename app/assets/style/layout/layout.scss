@@ -1,0 +1,132 @@
+.header{
+  .container{
+    height: 24px;
+  }
+    .title{
+        font-family: 'Arial Hebrew Scholar';
+    }
+    .menu-top-item:nth-child(3){
+        position: relative;
+    }
+    .notice{
+        line-height: 1.5;
+        position: absolute;
+        top: -9px;
+        left:12px;
+        width: 22px;
+        height: 18px;
+        border-radius: 9px;
+        background-color: #E31277;
+        @include phone{
+            left: 76px;  
+        }
+    } 
+}
+.footer{
+    .footer-banner{
+        background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true) no-repeat;
+        display: block;
+        height: 400px;
+        background-position: center center;
+        background-size: cover;
+
+        .email{  
+            width: 214px;
+            border: 1px solid transparent;
+            text-indent: 12px;
+            padding: 11px 0;
+            border-radius: 4px 0 0 4px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .subscribe{
+            width: 136px;
+        }
+        .btn{
+            border-radius: 0 4px 4px 0 !important;
+        }
+    }
+
+}
+
+.modal {
+  margin: 0;
+    &-content {
+      border-radius: 0;
+      border: none;
+    }
+    &-header {
+      border-bottom: none;
+    }
+    &-body{
+      .card{
+        max-width: 540px;
+      }
+    }
+    &-footer {
+      border-top: none;
+    }
+  }
+  .modal.right{
+    .modal-dialog{
+     margin: 0;
+     position: fixed;
+     top: 0;
+     right: 0;
+     max-width: 540px;
+     height: 100%;
+     margin: 0;
+     transform: translate3d(0%, 0, 0);
+    }
+    .modal-content{
+     height: 100%;
+     overflow-y: auto;
+     }
+ }
+ 
+.modal {
+  &-header{
+    padding: 32px 24px 12px 32px;
+    .btn{
+      width: 80px;
+      padding: 5px;
+    }
+  }
+  &-body{
+    padding: 0 0 0 32px;
+  }
+  .card{
+    a{
+      color: $black;
+      line-height: 0;
+    }
+  }
+    .card-body{
+      padding: 0 32px 22px 32px ;
+      .pic img{
+        width: 120px;
+        height: 120px;
+        display: block;
+      }
+  } }
+
+  .modal-body{
+    .status{
+      width: 2px;
+      height: 540px;
+        .unfinish{
+          width: 2px;
+          height: 10%;
+        }
+        .finish{
+          width: 2px;
+          height: 90%;
+        }
+    }
+  }
+.modal-footer{
+  .btn{
+    width: 118px;
+  }
+}

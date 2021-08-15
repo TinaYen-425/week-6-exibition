@@ -1,0 +1,99 @@
+.banner{
+    background-image: url(https://images.pexels.com/photos/3680770/pexels-photo-3680770.jpeg?cs=srgb&dl=pexels-jos%C3%A9-luis-photographer-3680770.jpg&fm=jpg);
+    width: 100%;
+    height: 480px;
+    display: block;
+    background-position: center center; 
+    background-size: cover;
+    padding-left: 180px;
+    @include phone{
+        padding-left: 0;
+    }
+    .btn{
+        width: 160px;
+        @include phone{
+            width: 165px;
+        }
+    }
+
+}
+
+.main-menu .container{
+    @include phone{
+        overflow-y: hidden;
+    }
+}
+.menu{
+    padding-top:14px;
+    padding-bottom: 10px;
+    @include phone{
+        width: 780px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .menu-item {
+        a{
+            display: block;
+            padding-right:16px;
+            padding-left: 16px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid transparent;
+         &:hover{
+             border-bottom: 1px solid #D80EB1;
+             color: $gray-70;
+         }
+        }
+        margin-right: 18px;
+        &:nth-child(9){
+            margin-right: 0;
+        }
+    }
+}
+.hot-exibition{
+    .col-lg-4{
+        background-size: cover;
+        background-position: center center;
+        img{
+            height: 350px;
+            @include phone{
+                height: 345px;
+            }
+        }
+    }
+    i{
+        color: $black;
+    }
+    @include phone{
+        .col-lg-7 br{
+        display: none;
+        }
+    }
+}
+.online-records{
+    font-family: $font-family-second;
+    .row{
+        background:url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true) no-repeat;
+        display: block;
+        background-size: cover;
+        background-position: center center;
+
+    }
+    .col-lg-5{
+        input{
+            width: 140px;
+
+        }
+    }
+    @include phone{
+        br{
+        display: none;
+        }
+    }
+}
+.normal-exibition{
+    img{
+        width: 100%;
+        height: 350px;
+    }
+}

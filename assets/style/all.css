@@ -16923,6 +16923,15 @@ body {
   font-weight: bold;
 }
 
+.p-fixed {
+  position: fixed;
+  width: 100%;
+}
+
+.z-index {
+  z-index: 100;
+}
+
 .text-center {
   text-align: center;
 }
@@ -16968,6 +16977,9 @@ body {
   .font-xm-sm {
     font-size: 1.75rem;
   }
+  .font-14-sm {
+    font-size: 14px;
+  }
 }
 
 .font-bold {
@@ -17004,6 +17016,14 @@ body {
 
 .font-f-second {
   font-family: "Noto Sans CJK TC";
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-relative {
+  position: relative;
 }
 
 .header .container {
@@ -17327,27 +17347,132 @@ body {
 }
 
 .exibition_design_top .ticket_amount {
-  height: 255px;
+  height: 256px;
+}
+
+@media (max-width: 375px) {
+  .exibition_design_top .ticket_amount {
+    height: auto;
+  }
 }
 
 .exibition_design_top .ticket_amount .w3 {
   width: 33.3333%;
 }
 
-.exibition_design_top .ticket_amount .w100 {
-  width: 100%;
+@media (max-width: 375px) {
+  .exibition_design_top .ticket_amount .w3 {
+    width: 20%;
+  }
 }
 
-.exibition_design_top .line-absolute {
-  position: relative;
-}
-
-.exibition_design_top .line {
-  width: 1px;
-  height: 255px;
+.exibition_design_top .border-right-cut::after {
+  content: '';
   position: absolute;
-  top: 0px;
-  right: 210px;
+  height: 256px;
+  width: 1px;
+  background: #707070;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 375px) {
+  .exibition_design_top .border-right-cut::after {
+    display: none;
+  }
+}
+
+.exibition_design_top .ticket_option a:hover {
+  border-bottom: 1px solid #E31277;
+}
+
+.exibition_design_top .col-lg-1 .btn {
+  width: 165px;
+}
+
+.design_banner_info .col-lg-12 {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg?raw=true);
+  display: block;
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.design_banner_info .col-lg-4 {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg?raw=true);
+  display: block;
+  height: 559px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.timeline_section::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #E31277;
+}
+
+.timeline-pointer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timeline-pointer::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -25%);
+      -ms-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+}
+
+.inprocess::after {
+  background-color: #E31277;
+}
+
+.unprocess::after {
+  border: 1px solid #E31277;
+  background-color: #fff;
+}
+
+.ticket_order_list .pic, .ticket_order_list .order_info, .ticket_order_list .ticket_amount {
+  width: 160px;
+}
+
+@media (max-width: 375px) {
+  .ticket_order_list .pic, .ticket_order_list .order_info, .ticket_order_list .ticket_amount {
+    width: 165px;
+  }
+}
+
+.ticket_order_list .pic img, .ticket_order_list .order_info img, .ticket_order_list .ticket_amount img {
+  width: 160px;
+  height: 84px;
+}
+
+.ticket_order_list .amount {
+  width: 75px;
+}
+
+@media (max-width: 375px) {
+  .timeline .row .col-lg-2:nth-child(1), .timeline .row .col-lg-2:nth-child(4) {
+    width: 20%;
+  }
+  .timeline .row .col-lg-2:nth-child(2), .timeline .row .col-lg-2:nth-child(3) {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -1,4 +1,10 @@
-//color
+.p-fixed{
+    position: fixed;
+    width: 100%;
+}
+.z-index{
+    z-index: 100;
+}
 
 
 //文字對齊
@@ -41,6 +47,9 @@
     .font-xm-sm{
         font-size: $font-size-xm; //28px
     }
+    .font-14-sm{
+        font-size: 14px;
+    }
     
     
 }
@@ -77,4 +86,11 @@
 
 .font-f-second{
     font-family: $font-family-second;//noto sans
+}
+
+.p-relative{
+    position: relative;
+}
+.p-relative{
+    position: relative;
 }

@@ -1,0 +1,61 @@
+
+.timeline_section::before { 
+content: " ";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 2px;
+background: $secondary;
+}
+
+.timeline-pointer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.timeline-pointer::after{
+    content: " ";
+	position: absolute;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	transform: translate(-50%,-25%);
+}
+.inprocess::after {
+    background-color: $secondary;
+}
+.unprocess::after{
+    border: 1px solid  $secondary;
+    background-color: #fff;
+}
+
+.ticket_order_list{
+    .pic,.order_info,.ticket_amount{
+        width: 160px;
+        @include phone{
+            width: 165px;
+        }
+    & img{
+        width: 160px;
+        height: 84px;
+    }
+    }
+    .amount{
+        width: 75px;
+    }
+
+}
+.timeline .row{
+    .col-lg-2{
+        @include phone{
+            &:nth-child(1), &:nth-child(4){
+                width: 20%;
+            }
+            &:nth-child(2), &:nth-child(3){
+                width: 30%;
+            }
+        }
+    }
+}

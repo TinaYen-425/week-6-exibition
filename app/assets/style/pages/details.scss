@@ -18,22 +18,55 @@
         }
     }
     .ticket_amount{
-        height: 255px;
+        height: 256px;
+        @include phone{
+            height: auto;
+        }
         .w3{
             width: 33.3333%;
-        }
-        .w100{
-            width: 100%;
+            @include phone{
+                width: 20%;
+            }
         }
     }
-    .line-absolute{
-        position: relative;
-    }
-    .line{
-        width: 1px;
-        height: 255px;
+    .border-right-cut::after{
+        content: '';
         position: absolute;
-        top: 0px;
-        right: 210px;
+        height: 256px;
+        width: 1px;
+        background:$gray-70;
+        right: 0;
+        top: 0;
+        @include phone{
+            display: none;
+        }
+    }
+    .ticket_option{
+        a:hover{
+            border-bottom: 1px solid $secondary;
+        }
+    }
+    .col-lg-1{
+        .btn{
+            width: 165px;
+        }
+    }
+
+}
+
+.design_banner_info{
+    .col-lg-12{
+        background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg?raw=true);
+        display: block;
+        height: 400px;
+        background-position: center center;
+        background-size: cover;
+    }
+    .col-lg-4{
+        background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg?raw=true);
+        display: block;
+        height: 559px;
+        background-position: center center;
+        background-size: cover;
     }
 }

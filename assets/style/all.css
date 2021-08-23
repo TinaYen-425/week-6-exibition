@@ -16932,6 +16932,10 @@ body {
   z-index: 100;
 }
 
+.w100 {
+  width: 100%;
+}
+
 .text-center {
   text-align: center;
 }
@@ -17464,6 +17468,26 @@ body {
 
 .ticket_order_list .amount {
   width: 75px;
+}
+
+.ticket_order_list .col-lg-4 {
+  margin-top: 456px;
+}
+
+@media (max-width: 375px) {
+  .ticket_order_list .col-lg-4 {
+    margin-top: 89px;
+  }
+}
+
+.ticket_order_list .col-lg-4 .ticket_next_step {
+  width: 350px;
+}
+
+@media (max-width: 375px) {
+  .ticket_order_list .col-lg-4 .ticket_next_step {
+    width: 165px;
+  }
 }
 
 @media (max-width: 375px) {

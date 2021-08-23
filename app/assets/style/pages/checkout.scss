@@ -45,6 +45,20 @@ background: $secondary;
     .amount{
         width: 75px;
     }
+.col-lg-4{
+    margin-top: 456px;
+    @include phone{
+        margin-top: 89px;
+    }
+    .ticket_next_step{
+        width: 350px;
+        @include phone{
+            width: 165px;
+        }
+       
+    }
+}
+
 
 }
 .timeline .row{

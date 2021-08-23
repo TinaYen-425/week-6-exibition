@@ -1,0 +1,135 @@
+---
+title: Exibition-結帳
+layout: ./app/layout.ejs
+engine: ejs
+current: checkout-1
+---
+<div class="timeline container mt-lg-6 mt-5 mb-lg-7 mb-5">
+    <div class="row justify-content-center justify-content-lg-start g-0">
+            <div class="col-lg-2 timeline_section p-relative">
+                <div class="timeline-pointer inprocess ">
+                    <p class="font-f-second text-gray-70-middle pt-2 font-14-sm">確認訂單</p>
+                </div>
+            </div>
+            <div class="col-lg-2 timeline_section p-relative ">
+                <div class="timeline-pointer unprocess ">
+                    <p class="font-f-second font-light pt-2 font-14-sm">填寫訂購資訊</p>
+                </div>           
+            </div>
+            <div class="col-lg-2 timeline_section p-relative">
+                <div class="timeline-pointer  unprocess">
+                    <p class="font-f-second font-light pt-2 font-14-sm">填寫付款資訊</p>
+                </div>   
+            </div>
+            <div class="col-lg-2 timeline_section p-relative ">
+                <div class="timeline-pointer  unprocess">
+                    <p class="font-f-second font-light pt-2 font-14-sm">完成訂購</p>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="ticket_order_list">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <ul class="ticket_order">
+                    <li class="ticket_order_item mb-5 d-flex justify-content-between align-items-center">
+                        <div class="pic"><a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true)" alt="alina-grubnyak"></a></div>
+                        <div class="order_info">
+                            <div class="d-flex justify-content-between">
+                            <h3 class="title mb-lg-1">2020 台味設計展</h3>
+                            <div class="delete d-block d-lg-none"><a class=" inline-block text-black" href="#"><span class="material-icons-outlined">
+                                close
+                                </span></a></div>
+                            </div>
+                            <p class="font-middle mb-1">01 JUN — 31 OCT</p>
+                            
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <p class="font-f-second text-gray-70 me-lg-0 me-1">全票</p>
+                                    <p class="d-block d-lg-none font-bold font-lg">1</p>
+                                </div>
+                                <div class="amount font-bold font-lg d-lg-none d-block">NT$350</div>
+                            </div>
+                        </div>
+                        <div class="amount font-bold font-lg d-lg-block d-none">NT$350</div>
+                        <div class="ticket_amount d-lg-flex d-lg-block d-none">
+                            <p><a class="text-black inline-block font-lg font-bold me-lg-3" href="#">-</a></p>
+                            <p class="font-lg font-bold me-lg-3">01</p>
+                            <p><a class="text-black inline-block font-lg font-bold" href="#">+</a></p>
+                        </div>
+                        <div class="delete d-lg-block d-none"><a class=" inline-block text-black" href="#"><span class="material-icons-outlined">
+                            close
+                            </span></a></div>
+                    </li>
+                    <li class="ticket_order_item mb-5 d-flex justify-content-between align-items-center">
+                        <div class="pic"><a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true)" alt="alina-grubnyak"></a></div>
+                        <div class="order_info">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="title mb-lg-1">No.22 線上設計展</h3>
+                                <div class="delete d-lg-none d-block"><a class=" inline-block text-black" href="#"><span class="material-icons-outlined">
+                                    close
+                                    </span></a></div>
+                            </div>
+                            <p class="font-middle mb-lg-1">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <p class="font-f-second text-gray-70 me-lg-0 me-1">全票</p>
+                                    <p class="d-block d-lg-none font-bold font-lg">1</p>
+                                </div>
+                                <div class="amount font-bold font-lg d-lg-none d-block">NT$350</div>
+                            </div>
+                        </div>
+                        <div class="amount font-bold font-lg d-lg-block d-none">NT$350</div>
+                        <div class="ticket_amount d-lg-flex d-lg-block d-none">
+                            <p><a class="text-black inline-block font-lg font-bold me-lg-3" href="#">-</a></p>
+                            <p class="font-lg font-bold me-lg-3">01</p>
+                            <p><a class="text-black inline-block font-lg font-bold" href="#">+</a></p>
+                        </div>
+                        <div class="delete d-lg-block d-none"><a class=" inline-block text-black " href="#"><span class="material-icons-outlined">
+                            close
+                            </span></a></div>
+                    </li>
+                    <li class="ticket_order_item d-flex justify-content-between align-items-center">
+                        <div class="pic"><a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true)" alt="alina-grubnyak"></a></div>
+                        <div class="order_info">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="title mb-lg-1">高雄設計節</h3>
+                                <div class="delete  d-lg-none d-block "><a class=" inline-block text-black" href="#"><span class="material-icons-outlined">
+                                    close
+                                    </span></a></div>
+                            </div> 
+                            <p class="font-middle mb-lg-1">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <p class="font-f-second text-gray-70 me-lg-0 me-1">全票</p>
+                                    <p class="d-block d-lg-none font-bold font-lg">1</p>
+                                </div>
+                                <div class="amount font-bold font-lg d-lg-none d-block">NT$350</div>
+                            </div>
+                        </div>
+                        <div class="amount font-bold font-lg d-lg-block d-none">NT$350</div>
+                        <div class="ticket_amount d-lg-flex d-lg-block d-none">
+                            <p><a class="text-black inline-block font-lg font-bold me-lg-3" href="#">-</a></p>
+                            <p class="font-lg font-bold me-lg-3">01</p>
+                            <p><a class="text-black inline-block font-lg font-bold" href="#">+</a></p>
+                        </div>
+                        <div class="delete d-lg-block d-none"><a class=" inline-block text-black " href="#"><span class="material-icons-outlined">
+                            close
+                            </span></a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-end">
+                <div>
+                    <div class="ticket_next_step d-flex justify-content-between mb-3">
+                    <p class="font-lg font-middle">小計</p>
+                    <p class="font-lg font-middle">NT$1050</p> 
+                    </div>
+                    <a class="w100 block btn btn-secondary" href="./checkout-2.html">下一步</a>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>

@@ -32,30 +32,37 @@ background: $secondary;
 }
 
 .ticket_order_list{
-    .pic,.order_info,.ticket_amount{
-        width: 160px;
-        @include phone{
-            width: 165px;
+    .pic{
+        & img{
+            width: 160px;
+            height: 84px;
+            @include phone{
+                width: 165px;
+            }
         }
-    & img{
+    }   
+    .order_info,.ticket_amount{
         width: 160px;
-        height: 84px;
-    }
     }
     .amount{
         width: 75px;
+        @include phone{
+            width: auto;
+        }
     }
 .col-lg-4{
-    margin-top: 456px;
-    @include phone{
-        margin-top: 89px;
-    }
     .ticket_next_step{
         width: 350px;
         @include phone{
             width: 165px;
         }
-       
+    }
+    .order_customer_info{
+        input::-webkit-input-placeholder {
+            font-family: $font-family-second;
+            color: $gray-70;
+        }
+    
     }
 }
 

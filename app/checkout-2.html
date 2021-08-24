@@ -29,22 +29,16 @@ current: checkout-2
     </div>
 </div>
 
-<div class="ticket_order_list">
+<div class="ticket_order_list mb-lg-3">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 d-flex flex-lg-column justify-content-between">
+        <div class="row flex-lg-row-reverse">
+            <div class="col-lg-8 order-2 mb-12">
                 <ul class="ticket_order">
                     <li class="ticket_order_item mb-5 d-flex justify-content-between align-items-center">
                         <div class="pic"><a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true)" alt="alina-grubnyak"></a></div>
                         <div class="order_info">
-                            <div class="d-flex justify-content-between">
                             <h3 class="title mb-lg-1">2020 台味設計展</h3>
-                            <div class="delete d-block d-lg-none"><a class=" inline-block text-black" href="#"><span class="material-icons-outlined">
-                                close
-                                </span></a></div>
-                            </div>
                             <p class="font-middle mb-1">01 JUN — 31 OCT</p>
-                            
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex align-items-center">
                                     <p class="font-f-second text-gray-70 me-lg-0 me-1">全票</p>
@@ -61,12 +55,7 @@ current: checkout-2
                     <li class="ticket_order_item mb-5 d-flex justify-content-between align-items-center">
                         <div class="pic"><a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true)" alt="alina-grubnyak"></a></div>
                         <div class="order_info">
-                            <div class="d-flex justify-content-between">
-                                <h3 class="title mb-lg-1">No.22 線上設計展</h3>
-                                <div class="delete d-lg-none d-block"><a class=" inline-block text-black" href="#"><span class="material-icons-outlined">
-                                    close
-                                    </span></a></div>
-                            </div>
+                            <h3 class="title mb-lg-1">No.22 線上設計展</h3>
                             <p class="font-middle mb-lg-1">01 JUN — 31 OCT</p>
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex align-items-center">
@@ -84,12 +73,7 @@ current: checkout-2
                     <li class="ticket_order_item d-flex justify-content-between align-items-center">
                         <div class="pic"><a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true)" alt="alina-grubnyak"></a></div>
                         <div class="order_info">
-                            <div class="d-flex justify-content-between">
-                                <h3 class="title mb-lg-1">高雄設計節</h3>
-                                <div class="delete  d-lg-none d-block "><a class=" inline-block text-black" href="#"><span class="material-icons-outlined">
-                                    close
-                                    </span></a></div>
-                            </div> 
+                            <h3 class="title mb-lg-1">高雄設計節</h3>
                             <p class="font-middle mb-lg-1">01 JUN — 31 OCT</p>
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex align-items-center">
@@ -106,18 +90,57 @@ current: checkout-2
                     </li>
                 </ul>
             </div>
+            <div class="col-lg-4 order-1 mb-6">
+                <div class="order_customer">
+                    <h3 class="font-middle font-f-second font-lg mb-lg-5 mb-4">訂購人資訊</h3>
+                    <div class="order_customer_info mb-14">
+                        <form action="checkout-2.html">
+                            <div class="info mb-5">
+                                <label class="block mb-1" for="email">Email</label>
+                                <input class="block w100 border border-gray-400 py-1 ps-3 rounded" type="email" id="email" name="email" placeholder="example@gmail.com">
+                            </div>
+                            <div class="info mb-5">
+                                <label class="block mb-1" for="name">姓名</label>
+                                <input class="block w100 border border-gray-400 py-1 ps-3 rounded" type="name" id="name" name="name" placeholder="請輸入姓名">
+                            </div>
+                            <div class="info mb-5">
+                                <label class="block mb-1" for="phone">聯絡電話</label>
+                                <input class="block w100 border border-gray-400 py-1 ps-3 rounded" type="tel" id="phone" name="phone" placeholder="請輸入電話">
+                            </div>
+                            <div class="info">
+                                <label class="block mb-1" for="discount">優惠碼</label>
+                                <input class="block w100 border border-gray-400 py-1 ps-3 rounded mb-1" type="text" id="discount" name="discount" placeholder="TG87526">
+                                <div class="font-f-second font-14 text-primary text-end">優惠碼已生效</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <p class="font-f-second font-middle mb-1">小計</p>
+                            <p class="font-f-second font-middle mb-1">折扣</p>
+                            <p class="font-f-second font-middle font-lg">總金額</p>
+                        </div>
+                        <div>
+                            <p class="font-light mb-1 text-end">NT$1050</p>
+                            <p class="font-light mb-1 text-end">-NT$50</p>
+                            <p class="font-middle font-lg text-end">NT$1000</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
 
-
 <div class="container">
     <div class="row justify-content-between">
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-6">
             <a  class="w100 block btn btn-outline-primary" href="./checkout-1.html">返回</a>
         </div>
-        <div class="col-lg-4">
-            <a class="w100 block btn btn-secondary" href="./checkout-2.html">下一步</a>
+        <div class="col-lg-4 col-6">
+            <a class="w100 block btn btn-secondary" href="./checkout-3.html">下一步</a>
         </div>
     </div>
 </div>

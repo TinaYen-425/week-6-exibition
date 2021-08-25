@@ -5,7 +5,12 @@
 .z-index{
     z-index: 100;
 }
-
+.w33{
+    width: 33.3333%;
+    @include phone{
+        width: 100%;
+    }
+}
 .w100{
     width: 100%;
 }
@@ -37,6 +42,9 @@
 }
 .font-40{
     font-size: $font-size-40; //40px
+}
+.font-44{
+    font-size: 44px;
 }
 .font-14{
     font-size: 14px;
